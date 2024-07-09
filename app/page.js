@@ -180,6 +180,39 @@ export default function Home() {
     }
   ];
 
+  const timelineData = [
+    {
+      title: 'Ideation',
+      duration: '20 Days [10/08/2024-30/08/2024]',
+      icon: 'https://cdn-icons-png.flaticon.com/512/932/932323.png', // replace with the actual path to the icon
+      backgroundColor: 'bg-gradient-to-r from-yellow-500 to-yellow-300',
+    },
+    {
+      title: 'Submission',
+      duration: '20 Days [10/08/2024-30/08/2024]',
+      icon: 'https://cdn-icons-png.flaticon.com/512/5360/5360973.png', // replace with the actual path to the icon
+      backgroundColor: 'bg-gradient-to-r from-red-500 to-red-300',
+    },
+    {
+      title: 'Evaluation',
+      duration: '5 Days',
+      icon: 'https://cdn-icons-png.flaticon.com/512/9139/9139399.png', // replace with the actual path to the icon
+      backgroundColor: 'bg-gradient-to-r from-purple-500 to-purple-300',
+    },
+    {
+      title: 'Finalist Announcement',
+      duration: '05/08/2024',
+      icon: 'https://cdn-icons-png.flaticon.com/512/7655/7655679.png', // replace with the actual path to the icon
+      backgroundColor: 'bg-gradient-to-r from-pink-500 to-pink-300',
+    },
+    {
+      title: '24 Hours Hackathon Offline',
+      duration: '14/08/2024 [Starts from 8pm]',
+      icon: 'https://cdn-icons-png.flaticon.com/512/2621/2621230.png', // replace with the actual path to the icon
+      backgroundColor: 'bg-gradient-to-r from-blue-500 to-blue-300',
+    },
+  ];
+
   const rules = [
   {
     title: "Rules!",
@@ -371,17 +404,26 @@ export default function Home() {
             className="w-[7rem] h-auto md:w-[14rem] md:h-auto"
           />
         </div>
-        {/* <div className="flex flex-col p-4 md:px-12 xl:px-20 py-16 md:py-24">
-          <div
-            className="grid grid-cols-1 gap-6 md:gap-8 md:grid-cols-2 
-            lg:grid-cols-3 xl:grid-cols-4 pt-8 md:pt-16"
-          >
-            {statisticsData.map((statistic, index) => (
-              <StatisticCard key={index} {...statistic} />
-            ))}
-          </div>
-        </div> */}
       </div>
+
+      
+      <div className="bg-black py-10">
+        <h2 className="text-white text-center text-3xl md:text-4xl font-bold mb-10">Schedule</h2>
+        <div className="flex flex-col md:flex-row items-center justify-around p-6 space-y-10 md:space-y-0 md:space-x-10">
+          {timelineData.map((item, index) => (
+            <div key={index} className="flex flex-col items-center">
+              <div className={`w-24 h-24 rounded-full flex items-center justify-center ${item.backgroundColor}`}>
+                <img src={item.icon} alt={item.title} className="w-12 h-12" />
+              </div>
+              <div className="text-center mt-4">
+                <h3 className="text-white text-xl font-semibold">{item.title}</h3>
+                <p className="text-white text-sm">{item.duration}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
 
 
 
@@ -406,47 +448,33 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col gap-6 md:gap-8">
-            {/* Theme 1 */}
             <div className="flex flex-col gap-4">
               <h2 className="text-[#FFF] text-[1.5rem] md:text-[2rem]">Each Theme</h2>
-              <div className="grid grid-cols-1">
-                <PrizeCard
-                  amount="10k"
-                  category="1st prize"
-                  default_bg="radial-gradient(116.96% 115.94% at 9.81% 9.24%, #383300 0%, rgba(56, 50, 0, 0.17) 100%)"
-                  hover_bg="radial-gradient(116.96% 115.94% at 9.81% 9.24%, #383300 0%, rgba(56, 50, 0, 0.17) 100%)"
-                />
-                <PrizeCard
-                  amount="5k"
-                  category="2nd prize"
-                  default_bg="radial-gradient(148.8% 129.29% at 94.87% 3.94%, #363636 0%, rgba(26, 26, 26, 0.27) 100%)"
-                  hover_bg="radial-gradient(371.89% 134.33% at 3.21% 1.26%,rgba(255, 255, 255, 0.07) 0%,rgba(217, 217, 217, 0.00) 100%)"
-                />
+              <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex-1">
+                  <PrizeCard
+                    amount="10k"
+                    category="1st prize"
+                    default_bg="radial-gradient(116.96% 115.94% at 9.81% 9.24%, #383300 0%, rgba(56, 50, 0, 0.17) 100%)"
+                    hover_bg="radial-gradient(116.96% 115.94% at 9.81% 9.24%, #383300 0%, rgba(56, 50, 0, 0.17) 100%)"
+                  />
+                </div>
+                <div className="flex-1">
+                  <PrizeCard
+                    amount="5k"
+                    category="2nd prize"
+                    default_bg="radial-gradient(148.8% 129.29% at 94.87% 3.94%, #363636 0%, rgba(26, 26, 26, 0.27) 100%)"
+                    hover_bg="radial-gradient(371.89% 134.33% at 3.21% 1.26%,rgba(255, 255, 255, 0.07) 0%,rgba(217, 217, 217, 0.00) 100%)"
+                  />
+                </div>
               </div>
             </div>
+          </div>
 
-           </div>
         </div>
       </div>
 
 
-
-      <div className="bg-black py-20">
-        <h2 className="text-4xl text-white mb-4 pl-28 pb-10">Schedule of SRCAS Hackathon</h2>
-        <div className="container mx-auto px-4">
-            <div className="flex flex-wrap justify-between">
-              {schedule.map((item, index) => (
-                <div key={index} className="flex flex-col items-center text-center w-full md:w-1/3 px-4 mb-8">
-                  <div className="w-24 h-24 rounded-full overflow-hidden mb-4">
-                    <Image src={item.image} alt={item.phase} className="object-cover w-full h-full" />
-                  </div>
-                  <h3 className="text-xl font-semibold mb-2 text-white">{item.phase}</h3>
-                  <p className="text-white">{item.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-      </div>
 
       
 

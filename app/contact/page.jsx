@@ -164,6 +164,10 @@ export default function Contact() {
               font-normal text-[1rem] md:flex-row lg:text-[1.5rem]"
               >
                 <div className="flex flex-col items-start gap-2">
+                  <p>+91 9629924052</p>
+                  <p>Dr. M. Praneesh</p>
+                </div>
+                <div className="flex flex-col items-start gap-2">
                   <p>+91 78453 14345</p>
                   <p>John Samuel</p>
                 </div>
