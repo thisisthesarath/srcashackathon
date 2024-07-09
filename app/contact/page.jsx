@@ -92,7 +92,7 @@ export default function Contact() {
                 </p>
                 <p className="text-[#D1CAC7] font-['Inter'] text-[1rem] font-normal md:text-[1.125rem]">
                   Book tickets from IRCTC : The campus is 10kms from the Railway.
-                  Our campus is around 10kms from station. Town buses will be always available!
+                   Town buses will be always available!
                 </p>
               </div>
             </div>
