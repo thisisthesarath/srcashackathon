@@ -35,29 +35,6 @@ const SocialMediaIcon = ({ Icon, href }) => (
 );
 
 export default function Home() {
-  const statisticsData = [
-    {
-      number: 3,
-      label: "Sessions",
-      description: "To help you get some better knowledge from the experts!",
-    },
-    {
-      number: 15,
-      label: "Special Prizes ",
-      description: "Seize the opportunity to pursue prizes beyond the first and second place.",
-    },
-    {
-      number: 30,
-      label: "Contributors",
-      description: "To optimize your experience with SRCAS Hackathon!",
-    },
-    {
-      number: 20,
-      label: "Mentors",
-      description: "To Assist you throughout the hackathon!",
-    },
-  ];
-
   const schedule = [
     {
       phase: "Registration and Idea Submission [10/07/2024 to 30/07/2024]",
@@ -225,55 +202,12 @@ export default function Home() {
         title: "Be original, but use open-source tools ethically."
       },
       {
-        title: "Max 4 teams only per institution."
-      },
-      {
         title: "Idea submission should be in the following PPT format [Click here to download]",
         link: "https://docs.google.com/presentation/d/1BB-OEiM0qulFVqKeKm4ekJ1VULCsgKFT/edit?usp=drivesdk&ouid=114882038934280859740&rtpof=true&sd=true"
       }
     ]
   }
 ];
-
-
-  const aboutData = [
-    {
-      imgSrc: "/aboutPage/img1.svg",
-      title: "Combine Together and Develop",
-      description:
-        "Build colleagues, work in groups, and develop your abilities while creating creative projects!",
-    },
-    {
-      imgSrc: "/aboutPage/img2.svg",
-      title: "Win Big",
-      description:
-        "The top 3 teams and best projects in each category will get exciting rewards, which will be announced soon!",
-    },
-    {
-      imgSrc: "/aboutPage/img3.svg",
-      title: "Immersive Learning",
-      description:
-        "Take part in stimulating tasks like the no-light event & technical classes to ensure that the entire experience is captivating.",
-    },
-    {
-      imgSrc: "/aboutPage/img4.svg",
-      title: "Guidance from Experts",
-      description:
-        "Get insightful advice and priceless mentoring from business executives who are committed to developing talent.",
-    },
-    {
-      imgSrc: "/aboutPage/img5.svg",
-      title: "Unlock Career Paths",
-      description:
-        "Excel and open doors to professional prospects by accepting sought offers from prestigious firms looking for exceptional candidates..",
-    },
-    {
-      imgSrc: "/aboutPage/img6.svg",
-      title: "Expand Your Circle",
-      description:
-        "Make connections with recruiters, business leaders, and other attendees to extend your reach and gain understanding from a variety of viewpoints.",
-    },
-  ];
 
   return (
    <div className="overflow-x-hidden">
