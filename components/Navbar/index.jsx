@@ -5,14 +5,13 @@ import { usePathname } from "next/navigation";
 import classes from "./index.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import MobileLogo from "@/public/mobileLogo.png";
 import { AnimatePresence, motion } from "framer-motion";
 
 const navigationItems = [
   { label: "Home", href: "/" },
   { label: "Partners", href: "/partners" },
   // { label: "Schedule", href: "/schedule" },
-  // { label: "Humans", href: "/humans" },
+  { label: "Humans", href: "/humans" },
   { label: "FAQs", href: "/faq" },
   { label: "Contact", href: "/contact" },
 ];
@@ -60,14 +59,6 @@ export default function Navbar() {
   return (
     <>
       <nav className="absolute sm:z-[2] w-full flex items-center justify-between xl:justify-center px-4 pt-8">
-        <div className="md:hidden flex items-center justify-center w-24 h-auto">
-          <Image
-            src={MobileLogo}
-            alt="Hackathon-Mobile-Logo"
-            className="w-full h-auto"
-            priority
-          />
-        </div>
         <div
           className="hidden h-10 xl:flex xl:justify-center xl:items-center 
             px-3 py-8 rounded-full border-2 border-solid border-gray-800 
