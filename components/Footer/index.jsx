@@ -15,10 +15,8 @@ const SocialMediaIcon = ({ Icon, href }) => (
 const Footer = () => {
   const navigationItems = [
     { label: "Home", href: "/" },
-    // { label: "Gallery", href: "/gallery" },
     { label: "Partners", href: "/partners" },
-    // { label: "Prizes", href: "/prizes" },
-    // { label: "Schedule", href: "/schedule" },
+    { label: "Humans", href: "/humans" },
     { label: "FAQs", href: "/faq" },
     { label: "Contact Us", href: "/contact" },
   ];
