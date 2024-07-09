@@ -20,7 +20,6 @@ import Sarath from "@/public/Volunteers/sarath.webp";
 import Gokul from "@/public/Volunteers/gokul.webp";
 import Vikaas from "@/public/Volunteers/vikaas.webp";
 import Poornila from "@/public/Volunteers/poornila.webp";
-import srikanth from "@/public/Volunteers/srikanth.webp";
 import nitya from "@/public/humansPage/nitya.jpg";
 
 // Mentors
@@ -151,14 +150,6 @@ export default function Team() {
       role: "Media Team",
       profilepic: SriSaratthi,
       linkedin: "https://www.linkedin.com/in/saratthi-080555166",
-      github: "https://www.github.com"
-    },
-    {
-      name: "Srikanth R G",
-      role: "Volunteer",
-      profilepic: srikanth,
-      linkedin: "https://www.linkedin.com/in/srikanth-r-g-544937283?",
-      instagram: "https://www.instagram.com/spetsnaz_srikanth?",
       github: "https://www.github.com"
     },
     {
