@@ -272,47 +272,18 @@ export default function Team() {
           </div>
         </div>
 
-        <Tabs
-          defaultValue="Mentors"
+        <div
           className="flex flex-col justify-center items-center text-white mt-4 md:mt-12"
         >
-          <TabsList className="mb-8 md:mb-16 w-[19rem] min-w-[321px]:w-80 sm:w-[488px]">
-            <TabsTrigger
-              value="Mentors"
-              className="sm:p-4 p-2 sm:w-60 w-40 min-[300px]:text-lg sm:text-2xl 
-                text-xl leading-7"
-            >
-              Mentors
-            </TabsTrigger>
-            <TabsTrigger
-              value="Organizers"
-              className="sm:p-4 p-2 sm:w-60 w-40 min-[300px]:text-lg sm:text-2xl 
-                text-xl leading-7"
-            >
-              Organizers
-            </TabsTrigger>
-          </TabsList>
-          <TabsContent value="Mentors">
-            <div
-              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 
-                place-content-center place-items-center gap-10"
-            >
-              {mentorData.map((human, index) => (
-                <HumansCard key={index} index={index} {...human} />
-              ))}
-            </div>
-          </TabsContent>
-          <TabsContent value="Organizers">
-            <div
-              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 
-                place-content-center place-items-center gap-10"
-            >
-              {organizerData.map((human, index) => (
-                <HumansCard key={index} index={index} {...human} />
-              ))}
-            </div>
-          </TabsContent>
-        </Tabs>
+          <div
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 
+              place-content-center place-items-center gap-10"
+          >
+            {organizerData.map((human, index) => (
+              <HumansCard key={index} index={index} {...human} />
+            ))}
+          </div>
+        </div>
       </div>
       <div className="bg-black w-full h-full py-24 lg:py-40">
         <div
@@ -331,6 +302,7 @@ export default function Team() {
           <FooterAnimation />
         </div>
       </div>
+
       <Footer />
     </>
   );
