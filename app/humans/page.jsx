@@ -15,14 +15,12 @@ import Rishaba from "@/public/Volunteers/rishaba.webp";
 import Vishnuraj from "@/public/Volunteers/VISHNURAJ R.webp";
 import Aarthi from "@/public/Volunteers/aarthi.webp";
 import Velan from "@/public/Volunteers/velan.jpeg";
-import logeshwaran from "@/public/Volunteers/logeshwaran.jpeg";
 import Nandita from "@/public/Volunteers/Nandita.jpg";
 import Sarath from "@/public/Volunteers/sarath.webp";
 import Gokul from "@/public/Volunteers/gokul.webp";
 import Vikaas from "@/public/Volunteers/vikaas.webp";
 import Poornila from "@/public/Volunteers/poornila.webp";
 import srikanth from "@/public/Volunteers/srikanth.webp";
-import PriyaDharshini from "@/public/Volunteers/Priya Dharshini.jpg";
 import nitya from "@/public/humansPage/nitya.jpg";
 
 // Mentors
@@ -127,25 +125,10 @@ export default function Team() {
       github: "https://www.github.com"
     },
     {
-      name: "Logeshwaran V",
-      role: "Designer",
-      profilepic: logeshwaran,
-      linkedin: "https://www.linkedin.com/in/logesh-waran-a42395227?",
-      instagram: "https://www.instagram.com/aeksio__hen__vys?",
-      github: "https://www.github.com"
-    },
-    {
       name: "Nandita",
       role: "Content Creator",
       profilepic: Nandita,
       linkedin: "https://www.linkedin.com/in/nandita-s-a38948312?",
-      github: "https://www.github.com"
-    },
-    {
-      name: "Priyadharshini K",
-      role: "Promotions",
-      profilepic: PriyaDharshini,
-      linkedin: "https://www.linkedin.com/in/priyadharshini-k-784920275",
       github: "https://www.github.com"
     },
     {
