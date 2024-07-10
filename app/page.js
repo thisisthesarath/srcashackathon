@@ -160,13 +160,13 @@ export default function Home() {
   const timelineData = [
     {
       title: 'Ideation',
-      duration: '20 Days [10/08/2024-30/08/2024]',
+      duration: '20 Days',
       icon: 'https://cdn-icons-png.flaticon.com/512/932/932323.png', // replace with the actual path to the icon
       backgroundColor: 'bg-gradient-to-r from-yellow-500 to-yellow-300',
     },
     {
       title: 'Submission',
-      duration: '20 Days [10/08/2024-30/08/2024]',
+      duration: 'Last Date 31/08/2024',
       icon: 'https://cdn-icons-png.flaticon.com/512/5360/5360973.png', // replace with the actual path to the icon
       backgroundColor: 'bg-gradient-to-r from-red-500 to-red-300',
     },
@@ -184,7 +184,7 @@ export default function Home() {
     },
     {
       title: '24 Hours Hackathon Offline',
-      duration: '14/08/2024 [Starts from 8pm]',
+      duration: '14/08/2024 [offline]',
       icon: 'https://cdn-icons-png.flaticon.com/512/2621/2621230.png', // replace with the actual path to the icon
       backgroundColor: 'bg-gradient-to-r from-blue-500 to-blue-300',
     },
