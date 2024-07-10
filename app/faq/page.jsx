@@ -59,7 +59,7 @@ export default function FAQ() {
     },
     {
       title: "What is the schedule of the hackathon?",
-      content: "The schedule is available on our website's schedule page.",
+      content: "The schedule is available on our website's home page.",
     },
     {
       title: "Where is the hackathon being held?",
@@ -87,7 +87,7 @@ export default function FAQ() {
       title:
         "Who can I contact for further information or assistance?",
       content:
-        "Feel free to send an email to hacksphere@gmail.com, or visit our contact page for additional contact information. We're eagerly awaiting your message.",
+        "Feel free to send an email to srcasprogrammingclub@gmail.com, or visit our contact page for additional contact information. We're eagerly awaiting your message.",
     },
   ];
 
