@@ -53,11 +53,6 @@ const normalSponsorsData = [
     category: "Knowledge Partner",
     sponsorimgsrc: startuptn,
   },
-  {
-    sponsor: "Devfolio",
-    category: "Platform Partner",
-    sponsorimgsrc: devfolio,
-  },
 ];
 
 const inKindSponsorsData = [
