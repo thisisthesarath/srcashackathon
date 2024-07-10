@@ -166,7 +166,7 @@ export default function Home() {
     },
     {
       title: 'Submission',
-      duration: 'Last Date 31/08/2024',
+      duration: 'Last Date 31/07/2024',
       icon: 'https://cdn-icons-png.flaticon.com/512/5360/5360973.png', // replace with the actual path to the icon
       backgroundColor: 'bg-gradient-to-r from-red-500 to-red-300',
     },
