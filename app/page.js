@@ -3,7 +3,6 @@ import ThemeTitle from "@/components/ThemeTitle";
 import { Button } from "@/components/ui/button";
 import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 import { HacksphereLogo } from "@/components/HacksphereLogo";
-import TextAnimation from "@/components/TextAnimation";
 import {
   Accordion,
   AccordionContent,
@@ -14,16 +13,12 @@ import PrizeCard from "@/components/PrizeCard";
 import {
   InstagramLogoIcon,
   LinkedInLogoIcon,
-  DiscordLogoIcon,
 } from "@radix-ui/react-icons";
 import Link from "next/link";
-import StatisticCard from "@/components/StatisticCard";
-import NewsLetter from "@/components/NewsLetter";
 import "./faq/page.css";
 import FooterAnimation from "@/components/FooterAnimation";
 import Footer from "@/components/Footer";
 
-import Image from "next/image";
 import phase1 from "@/public/schedulePage/phase.png"; // Replace with your image paths
 import phase2 from "@/public/schedulePage/phase.png";
 import phase3 from "@/public/schedulePage/phase.png";
@@ -81,21 +76,21 @@ export default function Home() {
         {
           title: "T1PS01: Develop a Voice-Based Data Entry System for Accessibility",
           description: "Create a system enabling individuals with limited typing abilities or visual impairments to input data using natural language commands, promoting accessibility in digital interactions.",
-          expectedOutcome: "Creation of a voice-based data entry system that enables individuals with limited typing abilities or visual impairments to interact with digital platforms using natural language. This system will promote digital inclusion, aiming to increase digital accessibility for 1 million users globally. Note: The idea/solution is not limited to this expected outcome. We encourage you to think outside the box and come up with your own innovative solutions and ideas as well!",
+          expectedOutcome: "Creation of a voice-based data entry system that enables individuals with limited typing abilities or visual impairments to interact with digital platforms using natural language. This system will promote digital inclusion, aiming to increase digital accessibility for 1 million users globally.",
           SDG: "SDG 10 - Reduced Inequalities",
           type: "Software"
         },
         {
           title: "T1PS02: Create a Microfinance Platform for Women Entrepreneurs",
           description: "Establish a blockchain-powered platform to provide women entrepreneurs in underserved communities with access to credit, financial literacy resources, and mentorship, empowering gender equality and economic growth.",
-          expectedOutcome: "Establishment of a blockchain-powered microfinance platform providing women entrepreneurs in underserved communities with access to credit, financial literacy resources, and mentorship. This platform will empower gender equality and economic growth, with a target of supporting 100,000 women entrepreneurs and increasing their business success rates by 40%. Note: The idea/solution is not limited to this expected outcome. We encourage you to think outside the box and come up with your own innovative solutions and ideas as well!",
+          expectedOutcome: "Establishment of a blockchain-powered microfinance platform providing women entrepreneurs in underserved communities with access to credit, financial literacy resources, and mentorship. This platform will empower gender equality and economic growth, with a target of supporting 100,000 women entrepreneurs and increasing their business success rates by 40%.",
           SDG: "SDG 5 - Gender Equality, SDG 8 - Decent Work and Economic Growth",
           type: "Software"
         },
         {
           title: "T1PS03: Digital Reputation Management",
           description: "Offer tools and services to monitor and manage online reputation across social media and search engine results, protecting brand integrity and promoting responsible digital citizenship.",
-          expectedOutcome: "Development of tools and services for monitoring and managing online reputations across social media and search engines. This service will protect brand integrity and promote responsible digital citizenship, aiming to reduce negative online incidents and improve reputation scores for 5,000 individuals and businesses by 30%. Note: The idea/solution is not limited to this expected outcome. We encourage you to think outside the box and come up with your own innovative solutions and ideas as well!",
+          expectedOutcome: "Development of tools and services for monitoring and managing online reputations across social media and search engines. This service will protect brand integrity and promote responsible digital citizenship, aiming to reduce negative online incidents and improve reputation scores for 5,000 individuals and businesses by 30%.",
           SDG: "SDG 16 - Peace, Justice, and Strong Institutions",
           type: "Software"
         }
@@ -108,21 +103,21 @@ export default function Home() {
         {
           title: "T2PS01: Precision Agriculture for Sustainable Food Production",
           description: "Implement AI-driven solutions to optimize resource allocation, monitor crop health, and manage pests and diseases, promoting sustainable farming practices and enhancing food security.",
-          expectedOutcome: "Implementation of AI-driven tools to optimize resource use, monitor crop health, and manage pests in real-time. This approach will enhance sustainable farming practices, increase crop yields by 15%, and contribute to food security and conservation goals. Note: The idea/solution is not limited to this expected outcome. We encourage you to think outside the box and come up with your own innovative solutions and ideas as well!",
+          expectedOutcome: "Implementation of AI-driven tools to optimize resource use, monitor crop health, and manage pests in real-time. This approach will enhance sustainable farming practices, increase crop yields by 15%, and contribute to food security and conservation goals.",
           SDG: "SDG 2 - Zero Hunger, SDG 15 - Life on Land",
           type: "Hardware and Software (any one of the solution is enough)"
         },
         {
           title: "T2PS02: NFT-Based Conservation Funding Platform",
           description: "Establish a platform using NFTs to fund environmental conservation projects, such as wildlife protection and habitat restoration, by tokenizing digital artworks and experiences.",
-          expectedOutcome: "Establishment of a platform leveraging NFTs to raise funds for environmental conservation projects. By tokenizing digital artworks and experiences, this platform will generate substantial funding for wildlife protection and habitat restoration, targeting an annual increase of $10 million in conservation investments. Note: The idea/solution is not limited to this expected outcome. We encourage you to think outside the box and come up with your own innovative solutions and ideas as well!",
+          expectedOutcome: "Establishment of a platform leveraging NFTs to raise funds for environmental conservation projects. By tokenizing digital artworks and experiences, this platform will generate substantial funding for wildlife protection and habitat restoration, targeting an annual increase of $10 million in conservation investments.",
           SDG: "SDG 14 - Life Below Water, SDG 15 - Life on Land",
           type: "Software"
         },
         {
           title: "T2PS03: Augmented Reality Farming Simulator",
           description: "Design an AR application to simulate farming scenarios, allowing farmers to test crop management strategies virtually before implementation, improving agricultural efficiency and productivity.",
-          expectedOutcome: "Development of an AR application allowing farmers to simulate and test crop management strategies virtually. This tool will improve agricultural efficiency and productivity, reducing trial-and-error in actual farming and increasing crop yields by 10% through better planning and resource management. Note: The idea/solution is not limited to this expected outcome. We encourage you to think outside the box and come up with your own innovative solutions and ideas as well!",
+          expectedOutcome: "Development of an AR application allowing farmers to simulate and test crop management strategies virtually. This tool will improve agricultural efficiency and productivity, reducing trial-and-error in actual farming and increasing crop yields by 10% through better planning and resource management.",
           SDG: "SDG 2 - Zero Hunger, SDG 9 - Industry, Innovation, and Infrastructure",
           type: "Software"
         }
@@ -135,21 +130,21 @@ export default function Home() {
         {
               title: "T3PS01: Decentralized Renewable Energy Systems",
               description: "Develop a decentralized renewable energy system that integrates solar, wind, and other renewable sources into local energy grids. This system should optimize energy distribution and storage at the community level.",
-              expectedOutcome: "Creation of a decentralized energy system that integrates various renewable sources, reducing dependency on centralized power plants and fossil fuels. This system will increase the adoption of renewable energy by 30% in targeted communities and decrease energy costs by 20%. Note: The idea/solution is not limited to this expected outcome. We encourage you to think outside the box and come up with your own innovative solutions and ideas as well!",
+              expectedOutcome: "Creation of a decentralized energy system that integrates various renewable sources, reducing dependency on centralized power plants and fossil fuels. This system will increase the adoption of renewable energy by 30% in targeted communities and decrease energy costs by 20%.",
               SDG: "SDG 7 - Affordable and Clean Energy, SDG 11 - Sustainable Cities and Communities",
               type: "Hardware and Software (any one of the solution is enough)",
         },
         {
           title: "T3PS02: AI-Driven Energy Management Platforms",
           description: "Create an AI-driven platform for smart energy management that monitors and optimizes energy usage in real-time for residential and commercial buildings. The platform should also predict and manage peak loads to enhance grid stability.",
-          expectedOutcome: "Development of an AI-driven energy management platform that reduces energy consumption by 15% and enhances grid stability by predicting and managing peak loads. This platform will contribute to more efficient energy use and lower energy bills for users. Note: The idea/solution is not limited to this expected outcome. We encourage you to think outside the box and come up with your own innovative solutions and ideas as well!",
+          expectedOutcome: "Development of an AI-driven energy management platform that reduces energy consumption by 15% and enhances grid stability by predicting and managing peak loads. This platform will contribute to more efficient energy use and lower energy bills for users.",
           SDG: "SDG 7 - Affordable and Clean Energy, SDG 9 - Industry, Innovation, and Infrastructure",
           type: "Software",
         },
         {
           title: "T3PS03: Blockchain for Renewable Energy Trading",
           description: "Implement a blockchain-based platform for peer-to-peer renewable energy trading. This platform will allow individuals and businesses to buy, sell, and trade excess renewable energy directly, promoting decentralized energy markets.",
-          expectedOutcome: "Establishment of a blockchain-based energy trading platform that facilitates peer-to-peer trading of renewable energy. This will increase the efficiency of energy markets, empower consumers, and potentially reduce energy waste by 25%. Note: The idea/solution is not limited to this expected outcome. We encourage you to think outside the box and come up with your own innovative solutions and ideas as well!",
+          expectedOutcome: "Establishment of a blockchain-based energy trading platform that facilitates peer-to-peer trading of renewable energy. This will increase the efficiency of energy markets, empower consumers, and potentially reduce energy waste by 25%.",
           SDG: "SDG 7 - Affordable and Clean Energy, SDG 12 - Responsible Consumption and Production",
           type: "Software",
         }
@@ -160,13 +155,13 @@ export default function Home() {
   const timelineData = [
     {
       title: 'Ideation',
-      duration: '20 Days',
+      duration: '20 Days [10/08/2024-30/08/2024]',
       icon: 'https://cdn-icons-png.flaticon.com/512/932/932323.png', // replace with the actual path to the icon
       backgroundColor: 'bg-gradient-to-r from-yellow-500 to-yellow-300',
     },
     {
       title: 'Submission',
-      duration: 'Last Date 31/07/2024',
+      duration: '20 Days [10/08/2024-30/08/2024]',
       icon: 'https://cdn-icons-png.flaticon.com/512/5360/5360973.png', // replace with the actual path to the icon
       backgroundColor: 'bg-gradient-to-r from-red-500 to-red-300',
     },
@@ -184,7 +179,7 @@ export default function Home() {
     },
     {
       title: '24 Hours Hackathon Offline',
-      duration: '14/08/2024 [offline]',
+      duration: '14/08/2024 [Starts from 8pm]',
       icon: 'https://cdn-icons-png.flaticon.com/512/2621/2621230.png', // replace with the actual path to the icon
       backgroundColor: 'bg-gradient-to-r from-blue-500 to-blue-300',
     },
@@ -232,7 +227,7 @@ export default function Home() {
               <br />
               for an 2-4 in-person hackathon.
             </p>
-            <Link href="https://forms.gle/nSknZS2vkFQMn98G6" passHref>
+            <Link href="devfolio.co" passHref>
               <Button
                 size="sm"
                 className="bg-[#FAF8ED] text-black text-[1.125rem] font-semibold p-6 
