@@ -71,8 +71,8 @@ export default function TitleSponsorCard() {
             
             <p className="text-[#EAECF0] font-normal font-[Inter] text-[1rem] md:text[1.125rem]">
             Sri Ramakrishna College of Arts and Science is a College of Arts and Science in Coimbatore, Tamil Nadu, India.
-             It was founded in 1987. At present, with 5000+ students, the college is offering 30+ programmes in Arts, Humanities, 
-             Science, Commerce and Management domains. The college of Accredited by NAAC with A+ grade. 
+             It was founded in 1987. At present, with 5000+ students, the College is offering 30+ programmes in Arts, Humanities, 
+             Science, Commerce and Management domains. The College of accredited by NAAC with A+ grade. 
             </p>
           </div>
         </div>
