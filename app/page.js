@@ -30,24 +30,6 @@ const SocialMediaIcon = ({ Icon, href }) => (
 );
 
 export default function Home() {
-  const schedule = [
-    {
-      phase: "Registration and Idea Submission [10/07/2024 to 30/07/2024]",
-      description: "Each team should pick a problem statement and register themselves before the date and also submit their Idea in a PPT format we provide!",
-      image: phase1,
-    },
-    {
-      phase: "Announcement of Finalists from  Round 1 [05/08/2024]",
-      description: "The shortlisted teams from the first round will be announced on fifth of August!",
-      image: phase2,
-    },
-    {
-      phase: "The Final Showdown of 24 Hours [14/08/2024]",
-      description: "The Final begins at 14 August 8pm on our Campus at complete offline mode, 24 hours will be given to complete your solution!",
-      image: phase3,
-    },
-  ];
-
   const images = [
     "/footer/sdg/1.png",
     "/footer/sdg/2.png",
@@ -155,13 +137,13 @@ export default function Home() {
   const timelineData = [
     {
       title: 'Ideation',
-      duration: '20 Days [10/08/2024-30/08/2024]',
+      duration: '20 Days',
       icon: 'https://cdn-icons-png.flaticon.com/512/932/932323.png', // replace with the actual path to the icon
       backgroundColor: 'bg-gradient-to-r from-yellow-500 to-yellow-300',
     },
     {
       title: 'Submission',
-      duration: '20 Days [10/08/2024-30/08/2024]',
+      duration: 'Last Date 31/07/2024]',
       icon: 'https://cdn-icons-png.flaticon.com/512/5360/5360973.png', // replace with the actual path to the icon
       backgroundColor: 'bg-gradient-to-r from-red-500 to-red-300',
     },
@@ -179,7 +161,7 @@ export default function Home() {
     },
     {
       title: '24 Hours Hackathon Offline',
-      duration: '14/08/2024 [Starts from 8pm]',
+      duration: '14/08/2024 [Offline]',
       icon: 'https://cdn-icons-png.flaticon.com/512/2621/2621230.png', // replace with the actual path to the icon
       backgroundColor: 'bg-gradient-to-r from-blue-500 to-blue-300',
     },
